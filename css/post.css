@@ -1,0 +1,100 @@
+.project .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project .projects .projectDiv {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 220px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 25px 25px;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project .projects .projectDiv * {
+  cursor: pointer;
+}
+
+.project .projects .projectDiv:hover {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.project .projects .projectDiv:hover .projectImgBox img {
+  height: 300px;
+}
+
+.project .projects .projectDiv:hover .projectTextBox h1 {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.project .projects .projectDiv:hover .projectTextBox h4 {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.project .projects .projectDiv .projectImgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 220px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.project .projects .projectDiv .projectImgBox img {
+  height: 240px;
+  transition: 0.3s;
+}
+
+.project .projects .projectDiv .projectTextBox {
+  width: 135px;
+  margin-left: 10px;
+}
+
+.project .projects .projectDiv .projectTextBox > * {
+  transition: 0.3s;
+}
+
+.project .projects .projectDiv .projectTextBox h1 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  text-shadow: none;
+  margin-top: 8px;
+}
+
+.project .projects .projectDiv .projectTextBox .projectTextDescription {
+  margin-top: 10px;
+  width: 145px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.project .projects .projectDiv .projectTextBox .projectTextDescription h4 {
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s;
+}
+
+.project .projects .projectDiv .projectTextBox p {
+  position: static;
+  font-size: 10px;
+  font-family: "Hind Madurai", sans-serif;
+  float: right;
+  margin-top: 5px;
+  margin-right: 6px;
+}

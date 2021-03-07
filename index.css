@@ -1,0 +1,100 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /*font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"); /*font-family: 'Ubuntu', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); /*font-family: 'Poppins', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"); /*font-family: 'Nunito Sans', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Nunito+Sans&display=swap"); /*font-family: 'Hind Madurai', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito+Sans&display=swap"); /*font-family: 'Nanum Gothic', sans-serif;*/ /* Support KR */
+
+@import "css/components/nav.css";
+@import "css/components//footer.css";
+
+@import "css/home.css";
+@import "css/about.css";
+@import "css/post.css";
+@import "css/contact.css";
+@import "css/onePost.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+main .moreSomething {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 150px;
+}
+
+main .moreSomething li:first-of-type {
+  margin-bottom: 8px;
+}
+
+main .moreSomething li a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  color: rgb(0, 100, 214);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.mainBoxTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.mainBoxTitle > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .mainBoxTitle > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+}

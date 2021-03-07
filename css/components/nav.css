@@ -1,0 +1,147 @@
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  top: 0;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+nav.shadow {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav #navLogo {
+  position: absolute;
+  left: 30px;
+}
+
+nav #navLogo > h1 {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  color: darkgray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav #navLogo .logoZoomIn {
+  font-size: 38px;
+  color: gray;
+}
+
+nav .navLinks {
+  display: block;
+  position: absolute;
+  right: 40px;
+}
+
+nav .navLinks > a {
+  font-size: 18px;
+  background-color: transparent;
+  color: gray;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+nav .navLinks > a:hover {
+  color: rgb(73, 73, 73);
+}
+
+nav .navLinks > a:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+nav .navLinks .currentUrl {
+  color: rgb(73, 73, 73);
+}
+
+nav button {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  nav .navLinks:not(.navLinkShow) {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: navHideUp 0.5s;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @keyframes navHideUp {
+    0% {
+      opacity: 1;
+      top: 80px;
+    }
+    100% {
+      top: 10px;
+      opacity: 0;
+    }
+  }
+
+  nav .navLinks.navLinkShow {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: navShowUp 0.5s;
+    background-color: #fff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  @keyframes navShowUp {
+    0% {
+      opacity: 0;
+      top: 10px;
+    }
+    100% {
+      top: 80px;
+      opacity: 1;
+    }
+  }
+
+  nav .navLinks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    width: 90%;
+    height: 30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  nav .navLinks a:not(:last-of-type) {
+    margin: 5px 0;
+  }
+
+  nav .navLinks a:last-of-type {
+    margin-bottom: 8px;
+  }
+
+  nav button {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+}
