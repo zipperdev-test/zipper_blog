@@ -71,14 +71,14 @@ nav button {
     opacity: 0;
     position: absolute;
     width: 100%;
-    top: 80px;
+    top: -1000px;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: navHideUp 0.5s;
-    background-color: white;
+    animation: navHideUp 1s;
+    background-color: rgb(250, 250, 250);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -88,8 +88,12 @@ nav button {
       opacity: 1;
       top: 80px;
     }
+    50% {
+      top: -10px;
+      opacity: 0;
+    }
     100% {
-      top: 10px;
+      top: -1000000px;
       opacity: 0;
     }
   }
@@ -104,7 +108,7 @@ nav button {
     align-items: center;
     flex-direction: column;
     animation: navShowUp 0.5s;
-    background-color: #fff;
+    background-color: rgb(250, 250, 250);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
