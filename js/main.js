@@ -1,6 +1,6 @@
-const omitformtags=["input", "textarea", "select"]
+let omitformtags=["input", "textarea", "select"]
 
-omitformtags=omitformtags.join("|")
+omitformtags = omitformtags.join("|")
 
 function disableselect(e){
     if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)

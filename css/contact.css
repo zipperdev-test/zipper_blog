@@ -15,7 +15,7 @@ main.contact .contactMe {
   height: 300px;
   border-radius: 20px;
   background-color: transparent;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@ main.contact .contactMe a img {
   border: 10px solid white;
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
   transition: 0.3s;
   cursor: pointer;
@@ -44,7 +44,7 @@ main.contact .contactMe a img {
 main.contact .contactMe a:hover img {
   width: 100px;
   height: 100px;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 main.contact .contactMe a h1 {
