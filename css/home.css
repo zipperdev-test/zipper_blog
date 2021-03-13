@@ -47,7 +47,7 @@ main.home #homeTitleDiv #homeTitleText {
   color: lightgrey;
 }
 
-main.home .scrollInfomational {
+main.home #homeTitleDiv .scrollInfomational {
   background-color: rgba(255, 255, 255, 0.25);
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@ main.home .scrollInfomational {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-main.home .scrollInfomational div {
+main.home #homeTitleDiv .scrollInfomational div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,21 +72,21 @@ main.home .scrollInfomational div {
   margin-top: 2px;
 }
 
-main.home .scrollInfomational div > div {
+main.home #homeTitleDiv .scrollInfomational div > div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-main.home .scrollInfomational div > div > div {
+main.home #homeTitleDiv .scrollInfomational div > div > div {
   width: 4px;
   height: 20px;
   background-color: white;
   border-radius: 20px;
 }
 
-main.home .scrollInfomational div > div > div:first-child {
+main.home #homeTitleDiv .scrollInfomational div > div > div:first-child {
   transform: rotate(-60deg);
   margin-right: 5.5px;
   animation: crossingLeft 4s infinite;
@@ -116,7 +116,7 @@ main.home .scrollInfomational div > div > div:first-child {
   }
 }
 
-main.home .scrollInfomational div > div > div:last-child {
+main.home #homeTitleDiv .scrollInfomational div > div > div:last-child {
   transform: rotate(60deg);
   margin-left: 5.5px;
   animation: crossingRight 4s infinite;
@@ -146,7 +146,7 @@ main.home .scrollInfomational div > div > div:last-child {
   }
 }
 
-main.home .scrollInfomational h1 {
+main.home #homeTitleDiv .scrollInfomational h1 {
   padding-top: 3px;
   font-family: "Hind Madurai", sans-serif;
   color: white;
