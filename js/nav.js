@@ -2,7 +2,7 @@ const nav = document.querySelector("nav");
 const navLogo = nav.querySelector("a h1");
 const urlLinkList = document.querySelector(".navLinks");
 const urlLinks = document.querySelectorAll(".navLinks > a");
-const navShowBtn = document.querySelector("nav button");
+const navShowBtn = document.querySelector("nav #navLinksOpenBtn");
 
 let i = 0;
 const URL = document.location.href;

@@ -9,12 +9,12 @@
 .project .projects .projectDiv {
   display: flex;
   flex-direction: row;
-  width: 320px;
-  height: 220px;
+  width: 360px;
+  height: 260px;
   box-sizing: border-box;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin: 25px 25px;
   transition: 0.3s;
   overflow: hidden;
@@ -32,36 +32,25 @@
   cursor: pointer;
 }
 
-.project .projects .projectDiv:hover .projectImgBox img {
-  height: 300px;
-}
-
-.project .projects .projectDiv:hover .projectTextBox h1 {
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-}
-
-.project .projects .projectDiv:hover .projectTextBox h4 {
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-}
-
 .project .projects .projectDiv .projectImgBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  height: 220px;
+  width: 180px;
+  height: 260px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 
 .project .projects .projectDiv .projectImgBox img {
-  height: 240px;
+  height: 280px;
   transition: 0.3s;
 }
 
 .project .projects .projectDiv .projectTextBox {
-  width: 135px;
+  position: relative;
+  width: 160px;
   margin-left: 10px;
 }
 
@@ -77,9 +66,22 @@
   margin-top: 8px;
 }
 
+.project .projects .projectDiv:hover .projectImgBox img {
+  height: 340px;
+}
+
+.project
+  .projects
+  .projectDiv:hover
+  .projectTextBox
+  .projectTextDescription
+  h4 {
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
 .project .projects .projectDiv .projectTextBox .projectTextDescription {
   margin-top: 10px;
-  width: 145px;
+  width: 160px;
   height: 30px;
   overflow: hidden;
 }
@@ -91,10 +93,10 @@
 }
 
 .project .projects .projectDiv .projectTextBox p {
-  position: static;
+  position: absolute;
   font-size: 10px;
   font-family: "Hind Madurai", sans-serif;
   float: right;
-  margin-top: 5px;
-  margin-right: 6px;
+  bottom: 10px;
+  right: 10px;
 }

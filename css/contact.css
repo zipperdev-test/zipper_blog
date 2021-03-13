@@ -13,7 +13,7 @@ main.contact .contactMe {
   width: 60%;
   border-radius: 20px;
   background-color: transparent;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   padding: 20px 0;
   margin-bottom: 30px;
 }
@@ -25,9 +25,16 @@ main.contact .contactMe a {
   box-sizing: border-box;
   width: 90%;
   height: 120px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 10px 0;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+main.contact .contactMe a:hover {
+  box-shadow: none;
 }
 
 main.contact .contactMe a * {
@@ -49,12 +56,6 @@ main.contact .contactMe a .contactIdTitle img {
   border: 8px solid white;
   width: 80px;
   height: 80px;
-}
-
-main.contact .contactMe a .contactIdTitle h1 {
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
-  cursor: pointer;
 }
 
 main.contact .contactMe a .contactIdSub {
