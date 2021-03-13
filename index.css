@@ -35,30 +35,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
-
-main .moreSomething {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding-top: 150px;
-}
-
-main .moreSomething li:first-of-type {
-  margin-bottom: 8px;
-}
-
-main .moreSomething li a {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: normal;
-  color: rgb(0, 100, 214);
-}
-
 a {
   text-decoration: none;
   color: black;
