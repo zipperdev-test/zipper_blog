@@ -3,39 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="contents/logo/meLogoRadius.png" type="image/x-icon">
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /*font-family: 'Roboto', sans-serif;*/
-            @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"); /*font-family: 'Ubuntu', sans-serif;*/
-        </style>
+        <link rel="shortcut icon" href="/contents/logo/meLogoRadius.png" type="image/x-icon">
+        <link rel="stylesheet" href="/index.css">
         <title>404 Page</title>
     </head>
     <body>
+        <nav>
+            <a id="navLogo" href="/">
+                <h1>Zipper_</h1>
+            </a>
+            <ul class="navLinks">
+                <a href="/">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/post.html">Post</a>
+                <a href="pages/contact.html">Contact</a>
+            </ul>
+            <button id="navLinksOpenBtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
         <main style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <h1 style="padding-top: 123px; font-family: 'Roboto', sans-serif;">404 Page</h1>
             <h3 style="padding-bottom: 123px; font-family: 'Ubuntu', sans-serif;">You reached the end of Zipper_</h3>
-            <a href="https://zipperdev.com">Go To Zipper_ Page</a>
         </main>
-        <script>
-            let omitformtags = ["input", "textarea", "select"];
-
-            omitformtags = omitformtags.join("|");
-
-            function disableselect(e){
-                if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1);
-                return false;
-            }
-
-            function reEnable(){
-                return true;
-            }
-
-            if (typeof document.onselectstart != "undefined")
-                document.onselectstart = new Function ("return false");
-            else{
-                document.onmousedown = disableselect;
-                document.onmouseup = reEnable;
-            }
-        </script>
+        <script src="/js/nav.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
